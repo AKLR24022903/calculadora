@@ -60,7 +60,7 @@ document.getElementById("punto").addEventListener("click", () => {
         valorActual = "0.";
     } else if (!valorActual.includes(".")) {
         valorActual += ".";
-        actualizarDisplay(valorActual);
+       display.value = valorActual;
     }
 }); //Permite colocar . en el numero y no se repita usando la propiedad includes.
 
