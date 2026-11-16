@@ -1,0 +1,62 @@
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e5e7eb;
+}
+
+h1 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    flex-direction: column;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 20px;
+    max-width: 320px;/* No se estira en toda la pantalla */
+    background-color: #18181b;
+    border-radius: 20px;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+  
+   
+}
+
+#display {
+    grid-column: span 4;
+    /* Hace que la pantalla abarque las 4 columnas */
+    background-color: #a3b18a;
+    color: #1b2618;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 2rem;
+    font-family:monospace;
+    margin-bottom: 12px;
+}
+.contenedor input[type="button"] {
+    font-size:20px;
+    border: none;
+}
+  
+.btn-num  {
+    background-color: #abc0a5;
+    border-radius: 10px;
+}
+.btn-op {
+    background-color: #f4a261;
+    border-radius: 10px;
+}
+.btn-esp {
+    background-color: #81dbf1;
+    border-radius: 10px;
+}
+.btn-esp[id="igual"] {
+    background-color: #ff7d13;
+    color: #ffffff;
+}
